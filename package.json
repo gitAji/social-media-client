@@ -6,13 +6,18 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/scss:dist/css",
-    "start": "sass --watch src/scss:dist/css & live-server",
+    "start1": "sass --watch src/scss:dist/css & live-server",
     "format": "prettier --write .",
-    "test": "npm run test-unit",
+    "test1": "npm run test-unit",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
     "prepare": "husky install",
-    "test-unit": "jest"
+    "test-unit": "jest",
+    "dev": "vite",
+    "viteBuild": "vite build",
+    "vitePreview": "vite preview",
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "ajee",
@@ -27,7 +32,8 @@
     "lint-staged": "^13.0.3",
     "live-server": "^1.1.0",
     "prettier": "^2.7.1",
-    "sass": "^1.54.8"
+    "sass": "^1.56.1",
+    "vite": "^3.2.3"
   },
   "dependencies": {
     "bootstrap-dark-5": "^1.1.3"
