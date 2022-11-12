@@ -10,11 +10,11 @@ describe("empty spec", () => {
 
     cy.get(".modal-dialog").should("be.visible");
     cy.wait(500);
-    cy.get("#registerName").type("test1010").should("have.value", "test1010"),
+    cy.get("#registerName").type("test007").should("have.value", "test007"),
       cy
         .get("#registerEmail")
-        .type("testifyx@stud.noroff.no")
-        .should("have.value", "testifyx@stud.noroff.no"),
+        .type("test007@stud.noroff.no")
+        .should("have.value", "test007@stud.noroff.no"),
       cy
         .get("#registerPassword")
         .type("12345678")
@@ -52,13 +52,6 @@ describe("empty spec", () => {
     cy.wait(2000);
     cy.get("#postTitle").type("Hello").should("have.value", "Hello"),
       cy.get("#postTags").type("Hello").should("have.value", "Hello"),
-      cy
-        .get("#postMedia")
-        .type("https://pixabay.com/photos/trip-outdoor-summer-vehicle-3351825/")
-        .should(
-          "have.value",
-          "https://pixabay.com/photos/trip-outdoor-summer-vehicle-3351825/"
-        ),
       cy
         .get("#postBody")
         .type("Hello World")
