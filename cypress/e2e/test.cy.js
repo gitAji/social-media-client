@@ -10,11 +10,11 @@ describe("empty spec", () => {
 
     cy.get(".modal-dialog").should("be.visible");
     cy.wait(500);
-    cy.get("#registerName").type("testify").should("have.value", "testify"),
+    cy.get("#registerName").type("test1010").should("have.value", "test1010"),
       cy
         .get("#registerEmail")
-        .type("test2322@stud.noroff.no")
-        .should("have.value", "testtestify@stud.noroff.no"),
+        .type("testifyx@stud.noroff.no")
+        .should("have.value", "testifyx@stud.noroff.no"),
       cy
         .get("#registerPassword")
         .type("12345678")
@@ -22,7 +22,7 @@ describe("empty spec", () => {
       cy
         .get("#registerAvatar")
         .type(
-          "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+          "https://gravatar.com/avatar/620d473929c795bf085b913b2f47fd0f?s=400&d=robohash&r=x"
         )
         .should(
           "have.value",
