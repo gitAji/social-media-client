@@ -25,7 +25,7 @@ The login form validates user inputs correctly based on API restrictions<br>
 The create item form validates user inputs correctly based on API restrictions<br>
 The logout button logs the user out when clicked<br>
 
-## badges
+## Badges
 
 [![pages-build-deployment](https://github.com/gitAji/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/gitAji/social-media-client/actions/workflows/pages/pages-build-deployment)
 
