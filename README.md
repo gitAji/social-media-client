@@ -17,7 +17,7 @@ Project is configured for hosting (e.g. CDN links or a Bundler)<br>
 The login function returns a valid token when provided with valid credentials<br>
 The logout function clears the token from browser storage<br>
 The create item function creates a new item on the API<br>
-<b>Note:</b><i>Unit test has a sample test file to pass</i>
+<b>Note:</b><i>Unit test has a sample test file.</i>
 
 ## The following features must be automatically tested with end-to-end tests:
 
