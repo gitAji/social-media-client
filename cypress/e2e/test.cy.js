@@ -10,11 +10,11 @@ describe("empty spec", () => {
 
     cy.get(".modal-dialog").should("be.visible");
     cy.wait(500);
-    cy.get("#registerName").type("test1").should("have.value", "test1"),
+    cy.get("#registerName").type("test0922").should("have.value", "test0922"),
       cy
         .get("#registerEmail")
-        .type("test1@stud.noroff.no")
-        .should("have.value", "test1@stud.noroff.no"),
+        .type("test2322@stud.noroff.no")
+        .should("have.value", "test2322@stud.noroff.no"),
       cy
         .get("#registerPassword")
         .type("12345678")
@@ -48,5 +48,22 @@ describe("empty spec", () => {
         .should("have.value", "12345678");
     cy.get("#loginForm button").contains("Login").click();
     cy.wait(500);
+    cy.get("#footerActions").contains("New Post").click();
+    cy.wait(2000);
+    cy.get("#postTitle").type("Hello").should("have.value", "Hello"),
+      cy.get("#postTags").type("Hello").should("have.value", "Hello"),
+      cy
+        .get("#postMedia")
+        .type("https://pixabay.com/photos/trip-outdoor-summer-vehicle-3351825/")
+        .should(
+          "have.value",
+          "https://pixabay.com/photos/trip-outdoor-summer-vehicle-3351825/"
+        ),
+      cy
+        .get("#postBody")
+        .type("Hello World")
+        .should("have.value", "Hello World");
+    cy.wait(5000);
+    cy.get("[data-action='publish']").click();
   });
 });

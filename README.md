@@ -27,3 +27,7 @@ The logout button logs the user out when clicked<br>
 ## badges
 
 [![pages-build-deployment](https://github.com/gitAji/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/gitAji/social-media-client/actions/workflows/pages/pages-build-deployment)
+
+[![Automated Unit Testing](https://github.com/gitAji/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/gitAji/social-media-client/actions/workflows/unit-test.yml)
+
+[![Automated E2E Testing](https://github.com/gitAji/social-media-client/actions/workflows/e2e-test.yml/badge.svg)](https://github.com/gitAji/social-media-client/actions/workflows/e2e-test.yml)
