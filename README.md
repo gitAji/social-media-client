@@ -17,6 +17,7 @@ Project is configured for hosting (e.g. CDN links or a Bundler)<br>
 The login function returns a valid token when provided with valid credentials<br>
 The logout function clears the token from browser storage<br>
 The create item function creates a new item on the API<br>
+<b>Note:</b><i>Unit test has a sample test file.</i>
 
 ## The following features must be automatically tested with end-to-end tests:
 
@@ -27,3 +28,7 @@ The logout button logs the user out when clicked<br>
 ## badges
 
 [![pages-build-deployment](https://github.com/gitAji/social-media-client/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/gitAji/social-media-client/actions/workflows/pages/pages-build-deployment)
+
+[![Automated Unit Testing](https://github.com/gitAji/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/gitAji/social-media-client/actions/workflows/unit-test.yml)
+
+[![Automated E2E Testing](https://github.com/gitAji/social-media-client/actions/workflows/e2e-test.yml/badge.svg)](https://github.com/gitAji/social-media-client/actions/workflows/e2e-test.yml)
