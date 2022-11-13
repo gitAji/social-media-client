@@ -10,11 +10,11 @@ describe("empty spec", () => {
 
     cy.get(".modal-dialog").should("be.visible");
     cy.wait(500);
-    cy.get("#registerName").type("test07").should("have.value", "test07"),
+    cy.get("#registerName").type("test7").should("have.value", "test7"),
       cy
         .get("#registerEmail")
-        .type("test07@stud.noroff.no")
-        .should("have.value", "test07@stud.noroff.no"),
+        .type("test7@stud.noroff.no")
+        .should("have.value", "test7@stud.noroff.no"),
       cy
         .get("#registerPassword")
         .type("12345678")
@@ -29,9 +29,11 @@ describe("empty spec", () => {
           "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
         );
     cy.get("#registerForm button").contains("Create Profile").click();
+    cy.log("created a new user");
     cy.wait(2000);
     cy.get("[data-auth='logout']").click();
     cy.clearLocalStorage();
+    cy.log("User logged out");
 
     cy.wait(2000);
     cy.get(".modal-dialog").should("be.visible");
@@ -47,16 +49,18 @@ describe("empty spec", () => {
         .type("12345678")
         .should("have.value", "12345678");
     cy.get("#loginForm button").contains("Login").click();
+    cy.log("User logged in");
     cy.wait(500);
     cy.get("#footerActions").contains("New Post").click();
-    cy.wait(2000);
+    cy.wait(5000);
     cy.get("#postTitle").type("Hello").should("have.value", "Hello"),
-      cy.get("#postTags").type("Hello").should("have.value", "Hello"),
+      cy.get("#postTags").type("New").should("have.value", "New"),
       cy
         .get("#postBody")
         .type("Hello World")
         .should("have.value", "Hello World");
     cy.wait(5000);
     cy.get("[data-action='publish']").click();
+    cy.log("created new post");
   });
 });
