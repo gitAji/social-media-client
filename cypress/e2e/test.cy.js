@@ -49,7 +49,7 @@ describe("empty spec", () => {
     cy.get("#loginForm button").contains("Login").click();
     cy.wait(500);
     cy.get("#footerActions").contains("New Post").click();
-    cy.wait(2000);
+    cy.wait(5000);
     cy.get("#postTitle").type("Hello").should("have.value", "Hello"),
       cy.get("#postTags").type("Hello").should("have.value", "Hello"),
       cy
