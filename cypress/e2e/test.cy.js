@@ -10,11 +10,11 @@ describe("empty spec", () => {
 
     cy.get(".modal-dialog").should("be.visible");
     cy.wait(500);
-    cy.get("#registerName").type("test7").should("have.value", "test7"),
+    cy.get("#registerName").type("testdone").should("have.value", "testdone"),
       cy
         .get("#registerEmail")
-        .type("test7@stud.noroff.no")
-        .should("have.value", "test7@stud.noroff.no"),
+        .type("testdone@stud.noroff.no")
+        .should("have.value", "testdone@stud.noroff.no"),
       cy
         .get("#registerPassword")
         .type("12345678")
